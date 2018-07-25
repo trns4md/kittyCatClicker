@@ -1,0 +1,14 @@
+body {
+    background-image: url("images/bokeh-2990426_1920.jpg");
+    background-repeat: repeat-y;
+}
+
+h1 {
+    font-family: 'Asset', cursive;
+    font-size: 36px;
+    text-align: center;
+}
+
+.kittyClowder {}
+
+.catCounter {}
