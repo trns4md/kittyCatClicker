@@ -9,6 +9,28 @@ h1 {
     text-align: center;
 }
 
-.kittyClowder {}
+#kittyClowder {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
-.catCounter {}
+#catCounter {
+    font-family: 'Asset', cursive;
+    font-size: 36px;
+    text-align: center;
+}
+
+#charlieCat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#nextCounter {
+    font-family: 'Asset', cursive;
+    font-size: 36px;
+    text-align: center;
+}

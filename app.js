@@ -1,29 +1,22 @@
-const catLineup = [{
-        name: 'Calico Kitty',
-        image: 'images/calico.jpg'
-    },
-    {
-        name: 'Charlie Kitty',
-        image: 'images/charlie.jpg'
-    },
-    {
-        name: 'Family of Tabbies',
-        image: 'images/kittyLitter.jpg'
-    },
-    {
-        name: 'Tuxedo Kitty',
-        image: 'images/mugsy.jpg'
-    },
-    {
-        name: 'Orange Tabby',
-        image: 'images/orangeTabby.jpg'
-    },
-    {
-        name: 'Enemy divine',
-        image: 'images/puppyLove'
-    },
-    {
-        name: 'Kitty on the half shell',
-        image: 'images/violet.JPG'
-    }
-];
+const kittyLitter = "Kitty Litter";
+const charlie = "Charlie Cat";
+
+
+
+let catPicture = document.getElementById('kittyClowder');
+let moves = 0;
+catPicture.addEventListener('click', function() {
+    let click = document.getElementById('catCounter');
+
+    moves++;
+    click.innerHTML = "Clicks:" + moves;
+});
+
+let nextPicture = document.getElementById('charlieCat');
+let choose = 0;
+nextPicture.addEventListener('click', function() {
+    let click = document.getElementById('nextCounter');
+
+    choose++;
+    click.innerHTML = "Clicks:" + choose;
+});
