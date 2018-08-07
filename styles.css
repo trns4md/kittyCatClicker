@@ -3,34 +3,77 @@ body {
     background-repeat: repeat-y;
 }
 
-h1 {
+h1,
+h2 {
     font-family: 'Asset', cursive;
     font-size: 36px;
     text-align: center;
 }
 
-#kittyClowder {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.namesList {
+    font-family: 'Asset', cursive;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-#catCounter {
-    font-family: 'Asset', cursive;
-    font-size: 36px;
+.displayCat {
+    background-color: purple;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.catName {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
     text-align: center;
 }
 
-#charlieCat {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.catPic {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
 }
 
-#nextCounter {
-    font-family: 'Asset', cursive;
-    font-size: 36px;
+.clickCount {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
     text-align: center;
 }
