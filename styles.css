@@ -10,23 +10,16 @@ h2 {
     text-align: center;
 }
 
-.namesList {
+#catList {
     font-family: 'Asset', cursive;
     font-size: 20px;
     padding: 0;
     margin: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+    text-align: center;
 }
 
-.displayCat {
-    background-color: purple;
+#displayCat {
+    background-color: #BFACC8;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -39,40 +32,47 @@ h2 {
     justify-content: space-around;
 }
 
-.catName {
-    background: tomato;
+#catName {
+    background: #C8C6D7;
     padding: 5px;
     width: 200px;
     height: 150px;
     margin-top: 10px;
     line-height: 150px;
-    color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#catPic {
+    background: ##C8C6D7;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: black;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
 }
 
-.catPic {
-    background: tomato;
+#clickCount {
+    background: #C8C6D7;
     padding: 5px;
     width: 200px;
     height: 150px;
     margin-top: 10px;
     line-height: 150px;
-    color: white;
-    font-weight: bold;
-    font-size: 3em;
-    text-align: center;
-}
-
-.clickCount {
-    background: tomato;
-    padding: 5px;
-    width: 200px;
-    height: 150px;
-    margin-top: 10px;
-    line-height: 150px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 3em;
     text-align: center;
