@@ -22,15 +22,28 @@
             <h1>Kitty Cat Clicker</h1>
             <h2>The Clowder:</h2>
         </header>
-        <article>
+        <div>
             <ul id="catList"></ul>
 
-        </article>
-        <article id="displayCat">
+        </div>
+        <div id="displayCat">
             <h3 id="catName"></h3>
             <div id="clickCount"></div>
             <img id="catPic" src="" alt="cute kitty pic">
-        </article>
+        </div>
+        <div>
+            <button id="button">Admin</button>
+        </div>
+        <div id="hidden-box">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Cat Name.."><br>
+            <label for="img">ImgURL:</label>
+            <input type="text" id="imgUrl" placeholder="Image URL..."><br>
+            <label for="clicks">Number of Clicks:</label>
+            <input type="text" id="clicks" placeholder="Number of clicks..."><br>
+            <button id="save">Save</button>
+            <button id="cancel">Cancel</button>
+        </div>
 
     </main>
 

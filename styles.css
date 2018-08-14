@@ -77,3 +77,35 @@ h2 {
     font-size: 3em;
     text-align: center;
 }
+
+#button {
+    font-family: 'Asset', cursive;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-left: 680px;
+    margin-top: 20px;
+}
+
+input[type=text],
+select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 0;
+    display: inherit;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+label {
+    width: 25%;
+    padding: 0;
+    margin: 0;
+    display: inherit;
+    box-sizing: border-box;
+}
+
+#hidden-box {
+    display: none;
+}

@@ -26,6 +26,7 @@ const model = {
             clickCount: 0,
         }
     ],
+    adminShow: false,
 };
 const octopus = {
 
@@ -35,7 +36,7 @@ const octopus = {
         //tell the view to render name list
         catDetails.init();
         catView.init();
-
+        adminView.init();
     },
     getCurrentCats: function() {
         //changes the current cat in the model
@@ -51,9 +52,29 @@ const octopus = {
     incrementCounter: function() {
         model.currentCat.clickCount++;
         catView.render();
+    },
+    adminDisplay: function() {
+        if (model.adminShow === false) {
+            model.adminShow = true;
+            adminView.show();
+        } else if (model.adminShow === true) {
+            model.adminShow = false;
+            adminView.hide();
+        }
+    },
+    adminSave: function() {
+        model.currentCat.name = admin.newCatName;
+        model.currentCat.image = admin.newSite;
+        model.currentCat.newClicks = admin.newClicks;
+        catView.render();
+        catDetails.render();
+        adminView.hide();
+    },
+    adminCancel: function() {
+        adminView.hide();
     }
-
 };
+
 const catView = {
     //view of cat details view
     init: function() {
@@ -77,7 +98,6 @@ const catView = {
 };
 
 const catDetails = {
-
     //view of cat name list
     init: function() {
         this.catList = document.getElementById('catList');
@@ -109,6 +129,44 @@ const catDetails = {
         }
 
     }
+
+};
+const adminView = {
+    init: function() {
+        let admin = document.getElementById('button');
+        let save = document.getElementById('save');
+        let cancel = document.getElementById('cancel');
+
+        admin.addEventListener('click', function() {
+            octopus.adminDisplay();
+        });
+        save.addEventListener('click', function() {
+            octopus.adminSave();
+        });
+        cancel.addEventListener('click', function() {
+            octopus.adminCancel();
+        });
+        this.render();
+    },
+    render: function() {
+        let newCurrentCat = octopus.getCurrentCats();
+        let box = document.getElementById('hidden-box');
+        let newCatName = document.getElementById('name');
+        let newSite = document.getElementById('imgURL');
+        let newClicks = document.getElementById('clicks');
+
+        newCatName.value = newCurrentCat.name;
+        newSite.value = newCurrentCat.image;
+        newClicks.value = newCurrentCat.clickCount;
+    },
+    show: function() {
+        let change = document.getElementById('hidden-box');
+        change.style.display = "block";
+    },
+    hide: function() {
+        change.style.display = "none";
+    }
+
 
 };
 octopus.init();
